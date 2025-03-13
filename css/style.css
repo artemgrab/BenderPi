@@ -1,0 +1,277 @@
+:root {
+    box-sizing: border-box;
+    color: #6290C8;
+    font-family: Inter, sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.layout-container {
+    margin: 0 120px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+nav > a > img {
+    fill: rgb(17, 144, 255);
+}
+
+header > .layout-container > nav > ul {
+    display: flex;
+    gap: 65px;
+    align-items: center;  
+}
+
+header > .layout-container > nav > ul > li > a {
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+header > .layout-container > nav > ul > li > a:hover {
+    font-size: 20.5px; 
+}
+ 
+nav > ul > li > a {
+     color: #6290C8;
+}
+
+h1 {
+    color: #376996;
+    font-weight: bold;
+    max-width: 555px;
+}
+
+.welc-block {
+    margin-top: 152px;
+    display: flex;
+}
+
+.welc-block > .lf-wel > p {
+    max-width: 525px;
+}
+
+.wel-links {
+    display: flex;
+    align-items: center;
+}
+
+.wel-links > a > img {
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.wel-links > a > img:hover {
+    transform: scale(1.03);
+}
+
+.rg-wel {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.our-adv {
+    background-color: #376996;
+    margin-top: 111px;
+}
+.our-adv > h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 33px;
+    text-align: center;
+}
+
+.num-adv {
+    font-size: 35px;
+    font-weight: bold;
+    color: #376996;
+    width: 59px;
+    height: 59px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #FFFFFF;
+    border-radius: 57px;
+    display:inline-block;
+    margin: 0;
+}
+
+.adv > h3 {
+    font-size: 30px;
+    font-weight: bold;
+    /* max-width: 230px; */
+    color: #FFFFFF;
+}
+
+.adv-desc {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 1.75;
+}
+
+.adv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+    padding-bottom: 80px;
+}
+
+.rg-bl > h2{
+    color: #376996;
+}
+.rg-bl > p{
+    line-height: 1.4;
+    font-size: 20px;
+    max-width: 807px;
+}
+
+.framework {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.lf-bl {
+    margin-left: auto;
+}
+
+.model {
+    display: flex;
+    align-items: center;
+    margin-top: 94px;
+}
+
+.ready-bl {
+    background-color: #376996;
+    margin-top: 128px;
+}
+
+.ready-bl > h1 {
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 728px;
+    margin: 0 auto;
+    padding-top: 54px;
+}
+
+.str {
+    padding: 11px 86px;
+    color: #376996;
+    font-size: 30px;
+    background-color: #FFFFFF;
+    border-radius: 87px;
+}
+
+.rec {
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 11px 85px;
+    border-radius: 87px;
+    border: 2px solid #FFFFFF;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 56px;
+    padding-bottom: 72px;
+}
+
+.top-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 67px;
+}
+.top-footer > ul > li > a {
+    color: #6290C8;
+}
+
+.top-footer > ul {
+    display: flex;
+    gap:55px;
+}
+
+.bottom-footer > ul li:not(:first-child) {
+    text-decoration: underline;
+}
+
+.bottom-footer > ul {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.bottom-footer {
+    margin-top: 136px;
+    padding-bottom: 69px;
+}
+
+.bottom-footer > ul > li > a {
+    color: #6290C8;
+}
+
+.frame-h1 {
+    margin: 0 auto;
+    max-width: 415px;
+    margin-top: 103px;
+    padding-bottom: 83px;
+}
+
+.h-lab {
+    font-weight: bold;
+    color: #376996;
+    margin: 0;
+}
+
+.labs > .lab > .rg-bl > .h-lab {
+    font-size: 25px;
+}
+
+.lab {
+    display: flex;
+    align-items: center;
+}
+
+.lab > .rg-bl > a {
+    color: #FFFFFF;
+    padding: 14px 40px;
+    border-radius: 87px;
+    background-color: #376996;
+}
+
+.lab-up {
+    margin-top: 184px;
+}
+
+.p-lab {
+    margin-bottom: 40px;
+}
+
+.lab-last-bl {
+    margin-bottom: 291px;
+}
