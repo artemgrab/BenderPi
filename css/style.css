@@ -182,6 +182,13 @@ h1 {
     font-size: 30px;
     background-color: #FFFFFF;
     border-radius: 87px;
+    transition: color 0.3s ease;
+}
+
+.str:hover {
+    background-color: #376996;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .rec {
@@ -190,6 +197,12 @@ h1 {
     padding: 11px 85px;
     border-radius: 87px;
     border: 2px solid #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.rec:hover {
+    background-color: #FFFFFF;
+    color: #376996;
 }
 
 .btns {
@@ -262,6 +275,13 @@ h1 {
     padding: 14px 40px;
     border-radius: 87px;
     background-color: #376996;
+    transition: background-color 0.3s ease color 0.3s ease;
+}
+
+.lab > .rg-bl > a:hover {
+    color: #376996;
+    background-color: #FFFFFF;
+    border: 2px solid #376996;
 }
 
 .lab-up {
@@ -274,4 +294,107 @@ h1 {
 
 .lab-last-bl {
     margin-bottom: 291px;
+}
+
+.bottom-footer > ul > li > a:hover{
+    color: #376996;
+}
+
+.bottom-footer > ul > li > a{
+    transition: color 0.3s ease;
+}
+.top-footer > ul > li > a:hover{
+    font-size: 20.3px;
+}
+
+.top-footer > ul > li > a{
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.bottom-footer > ul li:not(:first-child):hover {
+    text-decoration: underline;
+    text-decoration-color: #376996;
+}
+
+
+
+.accordion-i {
+    border: 2px solid #376996;
+    padding: 19px 0 19px 68px;
+    border-radius: 57px;
+    max-width: 983px;
+    margin: 33px auto;
+}
+
+.accordion-above {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.accordion-above p {
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+ol {
+    
+    counter-reset: my-counter;
+    padding-left: 20px;
+}
+
+ol > li {
+    counter-increment: my-counter;
+    list-style: none; 
+    position: relative;
+    padding-left: 20px; 
+    
+}
+
+ol > li::before {
+    content: counter(my-counter) ". ";
+    position: absolute;
+    left: 29px;
+    margin-top: 8px;
+}
+
+.accordion-above:hover p::after {
+    transform: scaleX(1);
+}
+
+.accordion-above > img {
+    transition: transform 0.3s ease-in-out;
+    margin-right: 19px;
+}
+
+.accordion-t {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.accordion-i.active .accordion-t {
+    max-height: 500px; 
+    padding-top: 10px;
+    max-width: 800px;
+}
+
+.accordion-i.active .accordion-above img {
+    transform: rotate(180deg);
+}
+
+.qa-h1 {
+    margin: 0 auto;
+    max-width: 100px;
+    margin-top: 103px;
+    padding-bottom: 23px;
+}
+
+.qa-foot {
+    margin-top: 100px;
 }
