@@ -1,0 +1,8 @@
+/source/
+/audio/output*.mp3
+/audio/output*.wav
+.env
+venv
+__pycache__
+.idea
+python/image.jpg

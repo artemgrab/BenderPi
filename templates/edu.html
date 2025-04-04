@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}	
+Навчання
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="layout-container">
+            <h1 class="frame-h1">Лабораторні роботи</h1>
+            <div class="labs">
+                <div class="lab">
+                    <div class="rg-bl">
+                        <p class="h-lab">Обробка мовлення</p>
+                        <p class="p-lab">Лабораторна робота присвячена технологіям розпізнавання мови. Учні працюють із мікрофоном, інтегрують OpenAI Whisper API та налаштовують пристрій на виконання команд, таких як відтворення звуку чи керування світлодіодами.</p>
+                        <a href="{{url_for('test')}}">Розпочати роботу</a>
+                    </div>
+                    <div class="lf-bl">
+                        <img src="{{url_for('static', filename='img/lab-1.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="lab lab-up">
+                    <div class="rg-bl">
+                        <p class="h-lab">Обробка зору</p>
+                        <p class="p-lab">Учні знайомляться з основами комп'ютерного зору, використовуючи бібліотеку OpenCV. Вони програмують алгоритми виявлення облич та жестів, тестуючи їх у реальному часі за допомогою камери пристрою.</p>
+                        <a href="">Розпочати роботу</a>
+                    </div>
+                    <div class="lf-bl">
+                        <img src="{{url_for('static', filename='img/lab-2.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="lab lab-up lab-last-bl">
+                    <div class="rg-bl">
+                        <p class="h-lab">Promt-engineering</p>
+                        <p class="p-lab">Учні вивчають принципи роботи мовних моделей і вчаться правильно формулювати запити. Вони експериментують із запитами до GPT, використовуючи пристрій для генерації текстових або аудіо відповідей.</p>
+                        <a href="">Розпочати роботу</a>
+                    </div>
+                    <div class="lf-bl">
+                        <img src="{{url_for('static', filename='img/lab-3.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %} 

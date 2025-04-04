@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}	
+Обробка мовлення
+{% endblock %}
+
+{% block content %}
+  <div class="layout-container">
+    <h1 class="mb-4">Обробка мовлення</h1>
+    <div class="mb-3">
+      <p><strong>Local Input (Blue):</strong></p>
+      <canvas id="localVisualizer" class="visualizer"></canvas>
+    </div>
+    <div class="mb-3">
+      <p><strong>Remote Audio Visualization (Red):</strong></p>
+      <canvas id="backendVisualizer" class="visualizer"></canvas>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block script %}
+<script src="{{url_for('static', filename='JS/connect.js')}}"></script>
+{% endblock %}

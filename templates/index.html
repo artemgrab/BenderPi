@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}	
+Головна
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="layout-container">
+        <div class="welc-block">
+            <div class="lf-wel">
+                <h1>Bender PI - легкий вхід у світ технологій ШІ</h1>
+                <p>Освітній фреймворк та програмована платформа для вивчення інженерії ШІ</p>
+                <div class="wel-links">
+                    <a href="https://github.com/artemgrab/Head_project"><img src="{{url_for('static', filename='img/logo-gh-big.png')}}" alt=""></a>
+                    <a href="#"><img src="{{url_for('static', filename='img/logo-tg-big.png')}}" alt=""></a>
+                </div>
+            </div>
+            <div class="rg-wel">
+                <img src="{{url_for('static', filename='img/welc-img.png')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="our-adv">
+            <h2>Наші переваги</h2>
+            <div class="layout-container adv-grid">
+                <div class="adv">
+                    <p class="num-adv">1</p>
+                    <h3>Доступність та адаптивність</h3>
+                    <p class="adv-desc">Фреймворк і платформа підходять для користувачів з різним рівнем підготовки та можуть використовуватись у школах, гуртках.</p>
+                </div>
+                <div class="adv">
+                    <p class="num-adv">2</p>
+                    <h3>Реальне застосування</h3>
+                    <p class="adv-desc">Платформа дає змогу тестувати алгоритми ШІ в умовах, наближених до реального світу, що сприяє глибшому засвоєнню матеріалу.</p>
+                </div>
+                <div class="adv">
+                    <p class="num-adv">3</p>
+                    <h3>Інтерактивне навчання</h3>
+                    <p class="adv-desc">Платформа поєднує теорію з практикою, дозволяючи студентам тестувати алгоритми на реальних прикладах.</p>
+                </div>
+            </div>
+    </div>
+    <div class="layout-container">
+        <div class="framework">
+            <div class="rg-bl">
+                <h2>Освітній фреймворк</h2>
+                <p>Фреймворк поєднує теорію, практику й експерименти для освоєння ШІ. Він підтримує бібліотеки машинного навчання, адаптується до різних рівнів підготовки та містить симуляції для кращого розуміння. Інтеграція з програмованою платформою дозволяє тестувати алгоритми в реальних умовах.</p>
+            </div>
+            <div class="lf-bl">
+                <img src="{{url_for('static', filename='img/frame.png')}}" alt="">
+            </div>
+        </div>
+        <div class="model">
+            <div class="rg-bl">
+                <h2>Програмована платформа</h2>
+                <p>Платформа на Raspberry Pi 3B призначена для практичного освоєння ШІ. Вона підтримує розпізнавання облич, голосу й жестів, підключення сенсорів і модулів, а також модифікацію ПЗ. Компактний дизайн і 3D-друкований корпус роблять її зручною для освіти та досліджень.</p>
+            </div>
+            <div class="lf-bl">
+                <img src="{{url_for('static', filename='img/model.png')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="ready-bl">
+        <h1>Готові вирушити у світ інженерії штучного інтелекту?</h1>
+        <div class="btns">
+            <a class="str" href="{{url_for('edu')}}">Розпочати</a>
+            <a class="rec" href="#">Інструкція</a>
+        </div>
+    </div>
+</main>
+{% endblock %} 
